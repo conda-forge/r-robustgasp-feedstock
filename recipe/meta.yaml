@@ -8,8 +8,8 @@ package:
 
 source:
   url:
-    - {{ cran_mirror }}/src/contrib/RobustGaSP_{{ version }}.tar.gz
-    - {{ cran_mirror }}/src/contrib/Archive/RobustGaSP/RobustGaSP_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/RobustGaSP_{{ version }}__.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/RobustGaSP/RobustGaSP_{{ version }}__.tar.gz
   sha256: d7ba431adfab6872e2390ffb42e092b9797c103935904758e212ea3c89059edd
 
 build:
