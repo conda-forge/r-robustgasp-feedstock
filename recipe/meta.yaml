@@ -1,4 +1,4 @@
-{% set version = "0.6.6" %}
+{% set version = "0.6.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RobustGaSP_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RobustGaSP/RobustGaSP_{{ version }}.tar.gz
-  sha256: d7ba431adfab6872e2390ffb42e092b9797c103935904758e212ea3c89059edd
+  sha256: 32d9bafacb2151259fa4dde3f38b5405dbc65c674e0368d21f9b687f3a7d8612
 
 build:
   merge_build_host: true  # [win]
