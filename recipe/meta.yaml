@@ -1,4 +1,4 @@
-{% set version = "0.6.4" %}
+{% set version = "0.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RobustGaSP_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RobustGaSP/RobustGaSP_{{ version }}.tar.gz
-  sha256: 32d9bafacb2151259fa4dde3f38b5405dbc65c674e0368d21f9b687f3a7d8612
+  sha256: d49148d65713a60c65549d87cc9d3e07cdeb0f6c4fc14551c78c2809e594b062
 
 build:
   missing_dso_whitelist:
     - '*/R.dll'           # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
